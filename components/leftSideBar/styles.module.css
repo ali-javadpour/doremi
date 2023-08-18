@@ -1,0 +1,21 @@
+.left_bar{
+    width: 7%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0px;
+  }
+  .left_bar_innerIcons{
+    display: flex;
+    flex-direction: column;
+  }
+  .left_bar_innerIcons > svg{
+      padding: 14px;
+  }
+  .divider{
+    border: 1px solid rgba(201, 201, 201, 0.356);
+    margin: 29px 0px;
+  }

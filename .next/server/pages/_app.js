@@ -1,0 +1,111 @@
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+(() => {
+var exports = {};
+exports.id = "pages/_app";
+exports.ids = ["pages/_app"];
+exports.modules = {
+
+/***/ "./node_modules/@next/font/google/target.css?{\"path\":\"pages/_app.js\",\"import\":\"Inter\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"inter\"}":
+/*!********************************************************************************************************************************************************!*\
+  !*** ./node_modules/@next/font/google/target.css?{"path":"pages/_app.js","import":"Inter","arguments":[{"subsets":["latin"]}],"variableName":"inter"} ***!
+  \********************************************************************************************************************************************************/
+/***/ ((module) => {
+
+eval("// Exports\nmodule.exports = {\n\t\"style\": {\"fontFamily\":\"'__Inter_9d0077', '__Inter_Fallback_9d0077'\",\"fontStyle\":\"normal\"},\n\t\"className\": \"__className_9d0077\"\n};\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9ub2RlX21vZHVsZXMvQG5leHQvZm9udC9nb29nbGUvdGFyZ2V0LmNzcz97XCJwYXRoXCI6XCJwYWdlcy9fYXBwLmpzXCIsXCJpbXBvcnRcIjpcIkludGVyXCIsXCJhcmd1bWVudHNcIjpbe1wic3Vic2V0c1wiOltcImxhdGluXCJdfV0sXCJ2YXJpYWJsZU5hbWVcIjpcImludGVyXCJ9LmpzIiwibWFwcGluZ3MiOiJBQUFBO0FBQ0E7QUFDQSxXQUFXLGdGQUFnRjtBQUMzRjtBQUNBIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vZG8tcmUtbWkvLi9ub2RlX21vZHVsZXMvQG5leHQvZm9udC9nb29nbGUvdGFyZ2V0LmNzcz8wMzkxIl0sInNvdXJjZXNDb250ZW50IjpbIi8vIEV4cG9ydHNcbm1vZHVsZS5leHBvcnRzID0ge1xuXHRcInN0eWxlXCI6IHtcImZvbnRGYW1pbHlcIjpcIidfX0ludGVyXzlkMDA3NycsICdfX0ludGVyX0ZhbGxiYWNrXzlkMDA3NydcIixcImZvbnRTdHlsZVwiOlwibm9ybWFsXCJ9LFxuXHRcImNsYXNzTmFtZVwiOiBcIl9fY2xhc3NOYW1lXzlkMDA3N1wiXG59O1xuIl0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./node_modules/@next/font/google/target.css?{\"path\":\"pages/_app.js\",\"import\":\"Inter\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"inter\"}\n");
+
+/***/ }),
+
+/***/ "./public/img/Diyare-Asheghihayam.jpg":
+/*!********************************************!*\
+  !*** ./public/img/Diyare-Asheghihayam.jpg ***!
+  \********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\"src\":\"/_next/static/media/Diyare-Asheghihayam.2fbc5bbd.jpg\",\"height\":500,\"width\":500,\"blurDataURL\":\"/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FDiyare-Asheghihayam.2fbc5bbd.jpg&w=8&q=70\",\"blurWidth\":8,\"blurHeight\":8});//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9wdWJsaWMvaW1nL0RpeWFyZS1Bc2hlZ2hpaGF5YW0uanBnLmpzIiwibWFwcGluZ3MiOiI7Ozs7QUFBQSxpRUFBZSxDQUFDLDBOQUEwTiIsInNvdXJjZXMiOlsid2VicGFjazovL2RvLXJlLW1pLy4vcHVibGljL2ltZy9EaXlhcmUtQXNoZWdoaWhheWFtLmpwZz9hMjg5Il0sInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBkZWZhdWx0IHtcInNyY1wiOlwiL19uZXh0L3N0YXRpYy9tZWRpYS9EaXlhcmUtQXNoZWdoaWhheWFtLjJmYmM1YmJkLmpwZ1wiLFwiaGVpZ2h0XCI6NTAwLFwid2lkdGhcIjo1MDAsXCJibHVyRGF0YVVSTFwiOlwiL19uZXh0L2ltYWdlP3VybD0lMkZfbmV4dCUyRnN0YXRpYyUyRm1lZGlhJTJGRGl5YXJlLUFzaGVnaGloYXlhbS4yZmJjNWJiZC5qcGcmdz04JnE9NzBcIixcImJsdXJXaWR0aFwiOjgsXCJibHVySGVpZ2h0XCI6OH07Il0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./public/img/Diyare-Asheghihayam.jpg\n");
+
+/***/ }),
+
+/***/ "./public/img/aseman_abri.jpg":
+/*!************************************!*\
+  !*** ./public/img/aseman_abri.jpg ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\"src\":\"/_next/static/media/aseman_abri.255e2b5a.jpg\",\"height\":450,\"width\":450,\"blurDataURL\":\"/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Faseman_abri.255e2b5a.jpg&w=8&q=70\",\"blurWidth\":8,\"blurHeight\":8});//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9wdWJsaWMvaW1nL2FzZW1hbl9hYnJpLmpwZy5qcyIsIm1hcHBpbmdzIjoiOzs7O0FBQUEsaUVBQWUsQ0FBQywwTUFBME0iLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9kby1yZS1taS8uL3B1YmxpYy9pbWcvYXNlbWFuX2FicmkuanBnP2ZlZjYiXSwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGRlZmF1bHQge1wic3JjXCI6XCIvX25leHQvc3RhdGljL21lZGlhL2FzZW1hbl9hYnJpLjI1NWUyYjVhLmpwZ1wiLFwiaGVpZ2h0XCI6NDUwLFwid2lkdGhcIjo0NTAsXCJibHVyRGF0YVVSTFwiOlwiL19uZXh0L2ltYWdlP3VybD0lMkZfbmV4dCUyRnN0YXRpYyUyRm1lZGlhJTJGYXNlbWFuX2FicmkuMjU1ZTJiNWEuanBnJnc9OCZxPTcwXCIsXCJibHVyV2lkdGhcIjo4LFwiYmx1ckhlaWdodFwiOjh9OyJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./public/img/aseman_abri.jpg\n");
+
+/***/ }),
+
+/***/ "./context/provider.js":
+/*!*****************************!*\
+  !*** ./context/provider.js ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"UserContext\": () => (/* binding */ UserContext),\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _public_img_aseman_abri_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../public/img/aseman_abri.jpg */ \"./public/img/aseman_abri.jpg\");\n/* harmony import */ var _public_img_Diyare_Asheghihayam_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../public/img/Diyare-Asheghihayam.jpg */ \"./public/img/Diyare-Asheghihayam.jpg\");\n\n\n\n\nconst UserContext = /*#__PURE__*/ (0,react__WEBPACK_IMPORTED_MODULE_1__.createContext)();\nconst Provider = ({ children  }, props)=>{\n    const smallBoxData = [\n        {\n            img: _public_img_aseman_abri_jpg__WEBPACK_IMPORTED_MODULE_2__[\"default\"],\n            title: \"aseman abrist\",\n            artist: \"Homayoon shajarian\",\n            genre: \"\"\n        },\n        {\n            img: _public_img_Diyare_Asheghihayam_jpg__WEBPACK_IMPORTED_MODULE_3__[\"default\"],\n            title: \"diare asheghi hayam\",\n            artist: \"Homayoon shajarian\",\n            genre: \"\"\n        },\n        {\n            img: _public_img_Diyare_Asheghihayam_jpg__WEBPACK_IMPORTED_MODULE_3__[\"default\"],\n            title: \"aseman abrist\",\n            artist: \"Homayoon shajarian\",\n            genre: \"\"\n        }\n    ];\n    // const mainURL = \"https://api.mobolet.ir/\"\n    const [showingPage, setShowingPage] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(\"main\");\n    //brand_menu Data\n    const [playingMusic, setPlayingMusic] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)({\n        img: _public_img_aseman_abri_jpg__WEBPACK_IMPORTED_MODULE_2__[\"default\"],\n        url: \"\",\n        title: \"aseman abrist\",\n        artist: \"Homayoon shajarian\",\n        genre: \"\"\n    });\n    const [playList, setPlayList] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)([\n        {\n            id: \"0001\",\n            img: _public_img_aseman_abri_jpg__WEBPACK_IMPORTED_MODULE_2__[\"default\"],\n            url: \"https://media-vip.my-pishvaz.com/musicfa/tagdl/downloads/Homayoun%20Shajaryan%20-%20Ahay%20Khabardar%20(320).mp3?st=K3nR8_23knD0-0kncyUY5Q&e=1679516219\",\n            title: \"ahay khabar dar\",\n            artist: \"Homayoon shajarian\",\n            genre: \"pop\"\n        },\n        {\n            id: \"0002\",\n            img: _public_img_Diyare_Asheghihayam_jpg__WEBPACK_IMPORTED_MODULE_3__[\"default\"],\n            url: \"https://media-vip.my-pishvaz.com/musicfa/tagdl/ati/Homayoun%20Shajaryan%20-%20Diare%20Asheghihayam%20(320).mp3?st=yZlF1qZQASEImMZZbEQIFw&e=1679516219\",\n            title: \"دیار عاشقی هایم\",\n            artist: \"Homayoon shajarian\",\n            genre: \"jazz\"\n        },\n        {\n            id: \"0003\",\n            img: _public_img_aseman_abri_jpg__WEBPACK_IMPORTED_MODULE_2__[\"default\"],\n            url: \"https://ups.music-fa.com/tagdl/8e401/Homayoun%20Shajaryan%20-%20Khoon%20Az%20Rokham%20Beshooy%20(320).mp3?_gl=1*9ecu53*_ga*MTc3MDQzNDg5Mi4xNjc5NTAzMjY5*_ga_FKQYXDVPQM*MTY3OTUxNTAxNC4yLjEuMTY3OTUxNTAxOC4wLjAuMA..&_ga=2.188433320.1243687680.1679503277-1770434892.1679503269\",\n            title: \"khoon az rokham beshavi\",\n            artist: \"Homayoon shajarian\",\n            genre: \"rock\"\n        }\n    ]);\n    const [music, setMusic] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(null);\n    const [playingTrack, setPlayingTrack] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(0);\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(UserContext.Provider, {\n        value: {\n            showingPage,\n            setShowingPage,\n            smallBoxData,\n            playingMusic,\n            setPlayingMusic,\n            music,\n            setMusic,\n            playingTrack,\n            setPlayingTrack,\n            playList,\n            setPlayList\n        },\n        children: children\n    }, void 0, false, {\n        fileName: \"/Users/alijavadpour/Desktop/doremi/context/provider.js\",\n        lineNumber: 70,\n        columnNumber: 3\n    }, undefined);\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Provider);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9jb250ZXh0L3Byb3ZpZGVyLmpzLmpzIiwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7OztBQUF1RDtBQUNMO0FBQ1E7QUFHbkQsTUFBTUssNEJBQWNKLG9EQUFhQSxHQUFHO0FBRTNDLE1BQU1LLFdBQVcsQ0FBQyxFQUFFQyxTQUFRLEVBQUUsRUFBRUMsUUFBVTtJQUV6QyxNQUFNQyxlQUFlO1FBQ3BCO1lBQ0NDLEtBQUtQLG1FQUFNQTtZQUNYUSxPQUFPO1lBQ1BDLFFBQVE7WUFDUkMsT0FBTztRQUNSO1FBQ0E7WUFDQ0gsS0FBS04sMkVBQU1BO1lBQ1hPLE9BQU87WUFDUEMsUUFBUTtZQUNSQyxPQUFPO1FBQ1I7UUFDQTtZQUNDSCxLQUFLTiwyRUFBTUE7WUFDWE8sT0FBTztZQUNQQyxRQUFRO1lBQ1JDLE9BQU87UUFDUjtLQUNBO0lBQ0QsNENBQTRDO0lBQzVDLE1BQU0sQ0FBQ0MsYUFBYUMsZUFBZSxHQUFHYiwrQ0FBUUEsQ0FBQztJQUMvQyxpQkFBaUI7SUFDakIsTUFBTSxDQUFDYyxjQUFjQyxnQkFBZ0IsR0FBR2YsK0NBQVFBLENBQUM7UUFDaERRLEtBQUtQLG1FQUFNQTtRQUNYZSxLQUFLO1FBQ0xQLE9BQU87UUFDUEMsUUFBUTtRQUNSQyxPQUFPO0lBQ1I7SUFDQSxNQUFNLENBQUNNLFVBQVVDLFlBQVksR0FBR2xCLCtDQUFRQSxDQUFDO1FBQ3hDO1lBQ0NtQixJQUFJO1lBQ0pYLEtBQUtQLG1FQUFNQTtZQUNYZSxLQUFLO1lBQ0xQLE9BQU87WUFDUEMsUUFBUTtZQUNSQyxPQUFPO1FBQ1I7UUFDQTtZQUNDUSxJQUFJO1lBQ0pYLEtBQUtOLDJFQUFNQTtZQUNYYyxLQUFLO1lBQ0xQLE9BQU87WUFDUEMsUUFBUTtZQUNSQyxPQUFPO1FBQ1I7UUFDQTtZQUNDUSxJQUFJO1lBQ0pYLEtBQUtQLG1FQUFNQTtZQUNYZSxLQUFLO1lBQ0xQLE9BQU87WUFDUEMsUUFBUTtZQUNSQyxPQUFPO1FBQ1I7S0FDQTtJQUNELE1BQU0sQ0FBQ1MsT0FBT0MsU0FBUyxHQUFHckIsK0NBQVFBLENBQUMsSUFBSTtJQUN2QyxNQUFNLENBQUNzQixjQUFjQyxnQkFBZ0IsR0FBR3ZCLCtDQUFRQSxDQUFDO0lBRWpELHFCQUNDLDhEQUFDRyxZQUFZQyxRQUFRO1FBQ3BCb0IsT0FBTztZQUNOWjtZQUFhQztZQUNiTjtZQUNBTztZQUFjQztZQUNkSztZQUFPQztZQUNQQztZQUFjQztZQUNkTjtZQUFVQztRQUVYO2tCQUVDYjs7Ozs7O0FBR0o7QUFDQSxpRUFBZUQsUUFBUUEsRUFBQyIsInNvdXJjZXMiOlsid2VicGFjazovL2RvLXJlLW1pLy4vY29udGV4dC9wcm92aWRlci5qcz8xZTE3Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCwgeyBjcmVhdGVDb250ZXh0LCB1c2VTdGF0ZSB9IGZyb20gJ3JlYWN0JztcbmltcG9ydCBpbWFnZTEgZnJvbSBcIi4uL3B1YmxpYy9pbWcvYXNlbWFuX2FicmkuanBnXCJcbmltcG9ydCBpbWFnZTIgZnJvbSBcIi4uL3B1YmxpYy9pbWcvRGl5YXJlLUFzaGVnaGloYXlhbS5qcGdcIlxuXG5cbmV4cG9ydCBjb25zdCBVc2VyQ29udGV4dCA9IGNyZWF0ZUNvbnRleHQoKTtcblxuY29uc3QgUHJvdmlkZXIgPSAoeyBjaGlsZHJlbiB9LCBwcm9wcykgPT4ge1xuXG5cdGNvbnN0IHNtYWxsQm94RGF0YSA9IFtcblx0XHR7XG5cdFx0XHRpbWc6IGltYWdlMSxcblx0XHRcdHRpdGxlOiBcImFzZW1hbiBhYnJpc3RcIixcblx0XHRcdGFydGlzdDogXCJIb21heW9vbiBzaGFqYXJpYW5cIixcblx0XHRcdGdlbnJlOiBcIlwiXG5cdFx0fSxcblx0XHR7XG5cdFx0XHRpbWc6IGltYWdlMixcblx0XHRcdHRpdGxlOiBcImRpYXJlIGFzaGVnaGkgaGF5YW1cIixcblx0XHRcdGFydGlzdDogXCJIb21heW9vbiBzaGFqYXJpYW5cIixcblx0XHRcdGdlbnJlOiBcIlwiXG5cdFx0fSxcblx0XHR7XG5cdFx0XHRpbWc6IGltYWdlMixcblx0XHRcdHRpdGxlOiBcImFzZW1hbiBhYnJpc3RcIixcblx0XHRcdGFydGlzdDogXCJIb21heW9vbiBzaGFqYXJpYW5cIixcblx0XHRcdGdlbnJlOiBcIlwiXG5cdFx0fSxcblx0XVxuXHQvLyBjb25zdCBtYWluVVJMID0gXCJodHRwczovL2FwaS5tb2JvbGV0LmlyL1wiXG5cdGNvbnN0IFtzaG93aW5nUGFnZSwgc2V0U2hvd2luZ1BhZ2VdID0gdXNlU3RhdGUoXCJtYWluXCIpXG5cdC8vYnJhbmRfbWVudSBEYXRhXG5cdGNvbnN0IFtwbGF5aW5nTXVzaWMsIHNldFBsYXlpbmdNdXNpY10gPSB1c2VTdGF0ZSh7XG5cdFx0aW1nOiBpbWFnZTEsXG5cdFx0dXJsOiBcIlwiLFxuXHRcdHRpdGxlOiBcImFzZW1hbiBhYnJpc3RcIixcblx0XHRhcnRpc3Q6IFwiSG9tYXlvb24gc2hhamFyaWFuXCIsXG5cdFx0Z2VucmU6IFwiXCJcblx0fSlcblx0Y29uc3QgW3BsYXlMaXN0LCBzZXRQbGF5TGlzdF0gPSB1c2VTdGF0ZShbXG5cdFx0e1xuXHRcdFx0aWQ6IFwiMDAwMVwiLFxuXHRcdFx0aW1nOiBpbWFnZTEsXG5cdFx0XHR1cmw6IFwiaHR0cHM6Ly9tZWRpYS12aXAubXktcGlzaHZhei5jb20vbXVzaWNmYS90YWdkbC9kb3dubG9hZHMvSG9tYXlvdW4lMjBTaGFqYXJ5YW4lMjAtJTIwQWhheSUyMEtoYWJhcmRhciUyMCgzMjApLm1wMz9zdD1LM25SOF8yM2tuRDAtMGtuY3lVWTVRJmU9MTY3OTUxNjIxOVwiLFxuXHRcdFx0dGl0bGU6IFwiYWhheSBraGFiYXIgZGFyXCIsXG5cdFx0XHRhcnRpc3Q6IFwiSG9tYXlvb24gc2hhamFyaWFuXCIsXG5cdFx0XHRnZW5yZTogXCJwb3BcIlxuXHRcdH0sXG5cdFx0e1xuXHRcdFx0aWQ6IFwiMDAwMlwiLFxuXHRcdFx0aW1nOiBpbWFnZTIsXG5cdFx0XHR1cmw6IFwiaHR0cHM6Ly9tZWRpYS12aXAubXktcGlzaHZhei5jb20vbXVzaWNmYS90YWdkbC9hdGkvSG9tYXlvdW4lMjBTaGFqYXJ5YW4lMjAtJTIwRGlhcmUlMjBBc2hlZ2hpaGF5YW0lMjAoMzIwKS5tcDM/c3Q9eVpsRjFxWlFBU0VJbU1aWmJFUUlGdyZlPTE2Nzk1MTYyMTlcIixcblx0XHRcdHRpdGxlOiBcItiv24zYp9ixINi52KfYtNmC24wg2YfYp9uM2YVcIixcblx0XHRcdGFydGlzdDogXCJIb21heW9vbiBzaGFqYXJpYW5cIixcblx0XHRcdGdlbnJlOiBcImphenpcIlxuXHRcdH0sXG5cdFx0e1xuXHRcdFx0aWQ6IFwiMDAwM1wiLFxuXHRcdFx0aW1nOiBpbWFnZTEsXG5cdFx0XHR1cmw6IFwiaHR0cHM6Ly91cHMubXVzaWMtZmEuY29tL3RhZ2RsLzhlNDAxL0hvbWF5b3VuJTIwU2hhamFyeWFuJTIwLSUyMEtob29uJTIwQXolMjBSb2toYW0lMjBCZXNob295JTIwKDMyMCkubXAzP19nbD0xKjllY3U1MypfZ2EqTVRjM01EUXpORGc1TWk0eE5qYzVOVEF6TWpZNSpfZ2FfRktRWVhEVlBRTSpNVFkzT1RVeE5UQXhOQzR5TGpFdU1UWTNPVFV4TlRBeE9DNHdMakF1TUEuLiZfZ2E9Mi4xODg0MzMzMjAuMTI0MzY4NzY4MC4xNjc5NTAzMjc3LTE3NzA0MzQ4OTIuMTY3OTUwMzI2OVwiLFxuXHRcdFx0dGl0bGU6IFwia2hvb24gYXogcm9raGFtIGJlc2hhdmlcIixcblx0XHRcdGFydGlzdDogXCJIb21heW9vbiBzaGFqYXJpYW5cIixcblx0XHRcdGdlbnJlOiBcInJvY2tcIlxuXHRcdH0sXG5cdF0pXG5cdGNvbnN0IFttdXNpYywgc2V0TXVzaWNdID0gdXNlU3RhdGUobnVsbClcblx0Y29uc3QgW3BsYXlpbmdUcmFjaywgc2V0UGxheWluZ1RyYWNrXSA9IHVzZVN0YXRlKDApXG5cblx0cmV0dXJuIChcblx0XHQ8VXNlckNvbnRleHQuUHJvdmlkZXJcblx0XHRcdHZhbHVlPXt7XG5cdFx0XHRcdHNob3dpbmdQYWdlLCBzZXRTaG93aW5nUGFnZSxcblx0XHRcdFx0c21hbGxCb3hEYXRhLFxuXHRcdFx0XHRwbGF5aW5nTXVzaWMsIHNldFBsYXlpbmdNdXNpYyxcblx0XHRcdFx0bXVzaWMsIHNldE11c2ljLFxuXHRcdFx0XHRwbGF5aW5nVHJhY2ssIHNldFBsYXlpbmdUcmFjayxcblx0XHRcdFx0cGxheUxpc3QsIHNldFBsYXlMaXN0LFxuXG5cdFx0XHR9fVxuXHRcdD5cblx0XHRcdHtjaGlsZHJlbn1cblx0XHQ8L1VzZXJDb250ZXh0LlByb3ZpZGVyPlxuXHQpO1xufTtcbmV4cG9ydCBkZWZhdWx0IFByb3ZpZGVyO1xuIl0sIm5hbWVzIjpbIlJlYWN0IiwiY3JlYXRlQ29udGV4dCIsInVzZVN0YXRlIiwiaW1hZ2UxIiwiaW1hZ2UyIiwiVXNlckNvbnRleHQiLCJQcm92aWRlciIsImNoaWxkcmVuIiwicHJvcHMiLCJzbWFsbEJveERhdGEiLCJpbWciLCJ0aXRsZSIsImFydGlzdCIsImdlbnJlIiwic2hvd2luZ1BhZ2UiLCJzZXRTaG93aW5nUGFnZSIsInBsYXlpbmdNdXNpYyIsInNldFBsYXlpbmdNdXNpYyIsInVybCIsInBsYXlMaXN0Iiwic2V0UGxheUxpc3QiLCJpZCIsIm11c2ljIiwic2V0TXVzaWMiLCJwbGF5aW5nVHJhY2siLCJzZXRQbGF5aW5nVHJhY2siLCJ2YWx1ZSJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./context/provider.js\n");
+
+/***/ }),
+
+/***/ "./pages/_app.js":
+/*!***********************!*\
+  !*** ./pages/_app.js ***!
+  \***********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ App)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _next_font_google_target_css_path_pages_app_js_import_Inter_arguments_subsets_latin_variableName_inter___WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @next/font/google/target.css?{\"path\":\"pages/_app.js\",\"import\":\"Inter\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"inter\"} */ \"./node_modules/@next/font/google/target.css?{\\\"path\\\":\\\"pages/_app.js\\\",\\\"import\\\":\\\"Inter\\\",\\\"arguments\\\":[{\\\"subsets\\\":[\\\"latin\\\"]}],\\\"variableName\\\":\\\"inter\\\"}\");\n/* harmony import */ var _next_font_google_target_css_path_pages_app_js_import_Inter_arguments_subsets_latin_variableName_inter___WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_next_font_google_target_css_path_pages_app_js_import_Inter_arguments_subsets_latin_variableName_inter___WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _context_provider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/context/provider */ \"./context/provider.js\");\n/* harmony import */ var _styles_globals_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/styles/globals.css */ \"./styles/globals.css\");\n/* harmony import */ var _styles_globals_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styles_globals_css__WEBPACK_IMPORTED_MODULE_2__);\n\n\n\n\nfunction App({ Component , pageProps  }) {\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_context_provider__WEBPACK_IMPORTED_MODULE_1__[\"default\"], {\n        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"main\", {\n            className: (_next_font_google_target_css_path_pages_app_js_import_Inter_arguments_subsets_latin_variableName_inter___WEBPACK_IMPORTED_MODULE_3___default().className),\n            children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(Component, {\n                ...pageProps\n            }, void 0, false, {\n                fileName: \"/Users/alijavadpour/Desktop/doremi/pages/_app.js\",\n                lineNumber: 11,\n                columnNumber: 9\n            }, this)\n        }, void 0, false, {\n            fileName: \"/Users/alijavadpour/Desktop/doremi/pages/_app.js\",\n            lineNumber: 10,\n            columnNumber: 7\n        }, this)\n    }, void 0, false, {\n        fileName: \"/Users/alijavadpour/Desktop/doremi/pages/_app.js\",\n        lineNumber: 9,\n        columnNumber: 5\n    }, this);\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9wYWdlcy9fYXBwLmpzLmpzIiwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7OztBQUlNQTtBQUptQztBQUNaO0FBS2QsU0FBU0UsSUFBSSxFQUFFQyxVQUFTLEVBQUVDLFVBQVMsRUFBRSxFQUFFO0lBQ3BELHFCQUNFLDhEQUFDSCx5REFBUUE7a0JBQ1AsNEVBQUNJO1lBQUtDLFdBQVdOLDBKQUFlO3NCQUM5Qiw0RUFBQ0c7Z0JBQVcsR0FBR0MsU0FBUzs7Ozs7Ozs7Ozs7Ozs7OztBQUloQyxDQUFDIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vZG8tcmUtbWkvLi9wYWdlcy9fYXBwLmpzP2UwYWQiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFByb3ZpZGVyIGZyb20gJ0AvY29udGV4dC9wcm92aWRlcidcbmltcG9ydCAnQC9zdHlsZXMvZ2xvYmFscy5jc3MnXG5pbXBvcnQgeyBJbnRlciB9IGZyb20gJ0BuZXh0L2ZvbnQvZ29vZ2xlJ1xuXG5jb25zdCBpbnRlciA9IEludGVyKHsgc3Vic2V0czogWydsYXRpbiddIH0pXG5cbmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIEFwcCh7IENvbXBvbmVudCwgcGFnZVByb3BzIH0pIHtcbiAgcmV0dXJuIChcbiAgICA8UHJvdmlkZXI+XG4gICAgICA8bWFpbiBjbGFzc05hbWU9e2ludGVyLmNsYXNzTmFtZX0+XG4gICAgICAgIDxDb21wb25lbnQgey4uLnBhZ2VQcm9wc30gLz5cbiAgICAgIDwvbWFpbj5cbiAgICA8L1Byb3ZpZGVyPlxuICApXG59XG4iXSwibmFtZXMiOlsiaW50ZXIiLCJQcm92aWRlciIsIkFwcCIsIkNvbXBvbmVudCIsInBhZ2VQcm9wcyIsIm1haW4iLCJjbGFzc05hbWUiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./pages/_app.js\n");
+
+/***/ }),
+
+/***/ "./styles/globals.css":
+/*!****************************!*\
+  !*** ./styles/globals.css ***!
+  \****************************/
+/***/ (() => {
+
+
+
+/***/ }),
+
+/***/ "react":
+/*!************************!*\
+  !*** external "react" ***!
+  \************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("react");
+
+/***/ }),
+
+/***/ "react/jsx-dev-runtime":
+/*!****************************************!*\
+  !*** external "react/jsx-dev-runtime" ***!
+  \****************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("react/jsx-dev-runtime");
+
+/***/ })
+
+};
+;
+
+// load runtime
+var __webpack_require__ = require("../webpack-runtime.js");
+__webpack_require__.C(exports);
+var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
+var __webpack_exports__ = (__webpack_exec__("./pages/_app.js"));
+module.exports = __webpack_exports__;
+
+})();

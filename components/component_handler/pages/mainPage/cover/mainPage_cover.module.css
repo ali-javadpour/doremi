@@ -1,0 +1,139 @@
+
+.mainDiv{
+    width: 65%;
+    padding: 10px 10px 10px 0px;
+}
+.mainBox{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+}
+
+.cover_header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 17px 40px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.cover_header > h1{
+    color: black;
+}
+
+.cover_header_options {
+    display: flex;
+    justify-content: space-evenly;
+    width: 36%;
+    align-items: center;
+}
+
+.cover_header_options > svg {
+    /* color: black; */
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+.cover_header_options > div {
+    height: 70%;
+    display: flex;
+    align-items: center;
+}
+.cover_header_options > div > input {
+    height: 100%;
+    background-color: white;
+    box-shadow: 0px 0px 5px 0px #d8d8d8;
+    border: none;
+    border-radius: 6px;
+    color: black;
+    padding-left: 25px;
+}
+
+.serachIcon{
+    opacity: 0.4;
+    margin-right: -20px;
+}
+
+.cover_header_options > div > input:focus {
+    border: none;
+    outline: none;
+}
+
+.cover_slider{
+    width: 90%;
+    height: 230px;
+    background-color: burlywood;
+}
+
+.cover_bottomPlaylist{
+    width: 90%;
+}
+
+.cover_bottomPlaylist_header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+.cover_bottomPlaylist_header > h3{
+    color: black;
+}
+.cover_bottomPlaylist_header > p{
+    color: black;
+    font-size: 13px;
+}
+
+.cover_bottomPlaylist_body {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    width: 100%;
+}
+.cover_bottomPlaylist_body_name > img{
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+.cover_bottomPlaylist_body_name > p{
+    padding: 0px 20px;
+    font-weight: bold;
+    opacity: 0.3;
+}
+.cover_bottomPlaylist_body_name > div > p{
+    font-size: 10px;
+    opacity: 0.5;
+    margin-top: 3px;
+}
+
+.cover_bottomPlaylist_body_name{
+    display: flex;
+    align-items: center;
+    width: 63%;
+}
+
+.cover_bottomPlaylist_body_genre{
+    display: flex;
+    width: 17%;
+    justify-content: space-between;
+    font-size: 13px;
+}
+
+.cover_bottomPlaylist_body_like{
+    display: flex;
+    width: 20%;
+    justify-content: flex-end;
+}
+
+.cover_bottomPlaylist_body_like > span{
+    display: flex;
+    align-items: center;
+    height: 5px;
+}
+
+.cover_bottomPlaylist_body_like > svg{
+    margin-right: 15px;
+}

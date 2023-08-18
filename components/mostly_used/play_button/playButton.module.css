@@ -1,0 +1,11 @@
+.playButtonContainer {
+    width: inherit;
+    height: inherit;
+    background-color: white;
+    border-radius: 50%;
+    color: #282828;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
