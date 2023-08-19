@@ -1,15 +1,18 @@
-import { useContext, useEffect, useState } from 'react'
+import { useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react'
 import { UserContext } from '@/context/provider'
 import styles from './mainPage_cover.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 import { faBell, faHeart } from '@fortawesome/free-regular-svg-icons'
+import BottomPlaylist from './BottomPlaylist';
 
 const MainPage_Cover = () => {
     const contextData = useContext(UserContext);
 
     const [isDragging, setIsDragging] = useState(false);
     const [width, setWidth] = useState(61); // initial width
+    const [componentWidth, setComponentWidth] = useState(0);
+    const componentRef = useRef(null);
 
     // custom style
     const style = {
@@ -50,6 +53,7 @@ const MainPage_Cover = () => {
 
 
     useEffect(() => {
+        console.log(isDragging);
         if (isDragging) {
             document.addEventListener('mousemove', handleResize);
             document.addEventListener('mouseup', () => setIsDragging(false));
@@ -64,38 +68,88 @@ const MainPage_Cover = () => {
     }, [isDragging]);
 
 
-    const BottomPlaylist = () => {
-        return (
-            contextData.playList.map((item, index) => {
-                return (
-                    <div className={styles.cover_bottomPlaylist_body} >
-                        <div className={styles.cover_bottomPlaylist_body_name}>
-                            <p>{String(index + 1).length === 1 ? ("0" + String(index + 1)) : index + 1}</p>
-                            <img src={item.img.src} />
-                            <div>
-                                <h4> {item.title} </h4>
-                                <p> {item.artist} </p>
-                            </div>
-                        </div>
-                        <div className={styles.cover_bottomPlaylist_body_genre} >
-                            <p> {item.genre} </p>
-                            <p style={{ opacity: "0.5" }}> {item.id} </p>
+    // const BottomPlaylist = useMemo(() => {
+    //     return (
+    //         contextData.playList.map((item, index) => {
+    //             return (
+    //                 <div className={styles.cover_bottomPlaylist_body} >
+    //                     <div className={styles.cover_bottomPlaylist_body_name} ref={inputRef}>
+    //                         <p>{String(index + 1).length === 1 ? ("0" + String(index + 1)) : index + 1}</p>
+    //                         <img src={item.img.src}  />
+    //                         <div>
+    //                             <h4> {item.title} </h4>
+    //                             <p> {item.artist} </p>
+    //                         </div>
+    //                     </div>
+    //                     <div className={styles.cover_bottomPlaylist_body_genre} >
+    //                         <p> {item.genre} </p>
+    //                         <p style={{ opacity: "0.5" }}> {item.id} </p>
 
-                        </div>
-                        <div className={styles.cover_bottomPlaylist_body_like} >
-                            <FontAwesomeIcon icon={faHeart} />
-                            <span> ... </span>
+    //                     </div>
+    //                     <div className={styles.cover_bottomPlaylist_body_like} >
+    //                         <FontAwesomeIcon icon={faHeart} />
+    //                         <span> ... </span>
 
-                        </div>
-                    </div>
-                )
-            })
-        )
-    }
+    //                     </div>
+    //                 </div>
+    //             )
+    //         })
+    //     )
+    // },[contextData.playList])
+
+    // const BottomPlaylist = () => {
+    //     const memoizedPlaylist = useMemo(() => {
+    //         return contextData.playList.map((item, index) => (
+    //             <div className={styles.cover_bottomPlaylist_body} key={item.id}>
+    //                 <div className={styles.cover_bottomPlaylist_body_name} ref={inputRef}>
+    //                         <p>{String(index + 1).length === 1 ? ("0" + String(index + 1)) : index + 1}</p>
+    //                         <img src={item.img.src}  />
+    //                         <div>
+    //                             <h4> {item.title} </h4>
+    //                             <p> {item.artist} </p>
+    //                         </div>
+    //                     </div>
+    //                     <div className={styles.cover_bottomPlaylist_body_genre} >
+    //                         <p> {item.genre} </p>
+    //                         <p style={{ opacity: "0.5" }}> {item.id} </p>
+
+    //                     </div>
+    //                     <div className={styles.cover_bottomPlaylist_body_like} >
+    //                         <FontAwesomeIcon icon={faHeart} />
+    //                         <span> ... </span>
+
+    //                     </div>
+    //             </div>
+    //         ));
+    //     }, [contextData.playList]); // Recalculate only if contextData.playList changes
+    
+    //     return (
+    //         <div>
+    //             {memoizedPlaylist}
+    //         </div>
+    //     );
+    // }
+    // const [boxWidth, setBoxWidth] = useState(null)
+    useEffect(() => {
+        const handleResize = () => {
+            const width = componentRef.current.getBoundingClientRect().width;
+            setComponentWidth(width);
+          };
+      
+          // Call the handleResize function when the component renders initially
+          handleResize();
+        window.addEventListener('resize', handleResize);
+
+    // Cleanup function to remove the event listener when the component is unmounted
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+    },[]);
 
     return (
         // <div className={styles.mainDiv}>
-        <div style={style} onMouseDown={() => setIsDragging(true)}>
+        
+        <div ref={componentRef} style={style} onMouseDown={() => setIsDragging(true)}>
             <div className={styles.cover_header}>
                 <h1>Home</h1>
                 <div className={styles.cover_header_options}>
@@ -106,18 +160,31 @@ const MainPage_Cover = () => {
                     </div>
                 </div>
             </div>
-            <div className={styles.cover_slider} >
+            <div className=" w-[90%] h-[230px] min-h-[200px] bg-blue-200 " >
 
             </div>
-            <div className={styles.cover_bottomPlaylist}>
+            {/* {console.log(boxWidth)} */}
+            {/* <Stage
+                width={boxWidth * 0.5}
+                height={height * 0.5}
+                onWheel={handleWheel}
+                scaleX={stage.stageScale}
+                scaleY={stage.stageScale}
+                x={stage.stageX}
+                y={stage.stageY}
+                draggable
+            /> */}
+            <div className=" w-full px-10 overflow-y-auto " >
+            <div style={{width: componentWidth*0.9}} >
                 <div className={styles.cover_bottomPlaylist_header}>
                     <h3>Trending right now</h3>
-                    <p>see all</p>
+                    <p className=" cursor-pointer " >see all</p>
                 </div>
                 {/* <div className={styles.cover_bottomPlaylist_body}> */}
-                <BottomPlaylist />
+                <BottomPlaylist playList={contextData.playList} />
                 {/* </div> */}
             </div>
+        </div>
         </div>
         // </div>
 
