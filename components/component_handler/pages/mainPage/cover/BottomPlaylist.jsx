@@ -46,7 +46,7 @@ const BottomPlaylist = ({ playList }) => {
     ));
   }, [playList]); // Recalculate only if contextData.playList changes
 
-  return <div>{memoizedPlaylist}</div>;
+  return <div className=" overflow-auto h-[90%] " >{memoizedPlaylist}</div>;
 };
 
 export default BottomPlaylist;
