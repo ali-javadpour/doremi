@@ -16,6 +16,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { faBell, faHeart } from "@fortawesome/free-regular-svg-icons";
 import BottomPlaylist from "./BottomPlaylist";
+import Slider from "@/components/mostly_used/Slider";
 
 const MainPage_Cover = () => {
   const contextData = useContext(UserContext);
@@ -104,7 +105,9 @@ const MainPage_Cover = () => {
   useEffect(() => {
     const handleResize = () => {
       const width = componentRef.current.getBoundingClientRect().width;
-      setComponentWidth(width);
+      if(!componentWidth){
+          setComponentWidth(width);
+      }
     };
 
     // Call the handleResize function when the component renders initially
@@ -116,6 +119,13 @@ const MainPage_Cover = () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
+  const sliderSlides = [
+      "https://static.vecteezy.com/system/resources/previews/006/363/338/original/electronic-music-festival-poster-with-abstract-gradient-lines-cover-design-electro-sound-fest-template-design-for-flyer-vector.jpg",
+      "https://www.bbc.co.uk/music/articles/staticarchive/2cbab2c64e59181661440ed2878456c67f4e607c.jpg",
+      "https://www.newsday.com/_next/image?url=https%3A%2F%2Fcdn.newsday.com%2Fimage-service%2Fversion%2Fc%3AMGNhMmIzYWQtYmU3NS00%3AMmExMzc3%2Fmusic-taylor-swift-cropped.jpg%3Ff%3DLandscape%2B16%253A9%26w%3D770%26q%3D1&w=1920&q=80",
+      "https://i.ytimg.com/vi/e08blhEc7vo/maxresdefault.jpg",
+  ]
 
   return (
     // <div className={styles.mainDiv}>
@@ -133,7 +143,7 @@ const MainPage_Cover = () => {
             style={{ transform: `rotate(${arrowDeg}deg)` }}
             onClick={() => openClickFunction()}
           />
-          <h1>Home</h1>
+          <h1 className="text-xl" >Home</h1>
         </div>
         <div className={styles.cover_header_options}>
           <FontAwesomeIcon icon={faBell} />
@@ -167,7 +177,11 @@ const MainPage_Cover = () => {
           }
           className="duration-1000 ease-in-out h-full"
         >
-          <div className=" h-[30%] bg-blue-200 "></div>
+          <div className=" h-[30%] flex w-full justify-center items-center ">
+              <Slider>
+                  {sliderSlides.map((e)=><img className="h-full" src={e} />)}
+              </Slider>
+          </div>
           {/* {console.log(boxWidth)} */}
           {/* <Stage
                 width={boxWidth * 0.5}
@@ -183,7 +197,7 @@ const MainPage_Cover = () => {
           <div className=" w-full px-10 flex items-center justify-center gap-4 h-[70%] ">
             <div style={{ minWidth: componentWidth * 0.9 }} className="h-full">
               <div className=" w-full flex justify-between items-end h-[10%] border-b border-gray-300 ">
-                <h3>Trending right now</h3>
+                <h3 className="text-base" >Trending right now</h3>
                 <p className=" cursor-pointer ">see all</p>
               </div>
               {/* <div className={styles.cover_bottomPlaylist_body}> */}
