@@ -194,8 +194,8 @@ const MainPage_Cover = () => {
                 draggable
             /> */}
 
-          <div className=" w-full px-10 flex items-center justify-center gap-4 h-[70%] ">
-            <div style={{ minWidth: componentWidth * 0.9 }} className="h-full">
+          <div className=" w-full px-10 flex items-center justify-center gap-4 h-[70%] ease-in-out duration-1000 ">
+            <div style={{ minWidth: "100%" }} className="h-full ease-in-out duration-1000 ">
               <div className=" w-full flex justify-between items-end h-[10%] border-b border-gray-300 ">
                 <h3 className="text-base" >Trending right now</h3>
                 <p className=" cursor-pointer ">see all</p>
@@ -212,7 +212,7 @@ const MainPage_Cover = () => {
               ? {
                   opacity: 1,
                   width: "35%",
-                  transition: "all 100ms ease-in-out",
+                  transition: "all 800ms ease-in-out",
                 }
               : { opacity: 0, width: 0, transition: "all 1000ms ease-in-out " }
           }
