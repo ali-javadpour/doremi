@@ -105,8 +105,8 @@ const MainPage_Cover = () => {
   useEffect(() => {
     const handleResize = () => {
       const width = componentRef.current.getBoundingClientRect().width;
-      if(!componentWidth){
-          setComponentWidth(width);
+      if (!componentWidth) {
+        setComponentWidth(width);
       }
     };
 
@@ -121,11 +121,11 @@ const MainPage_Cover = () => {
   }, []);
 
   const sliderSlides = [
-      "https://static.vecteezy.com/system/resources/previews/006/363/338/original/electronic-music-festival-poster-with-abstract-gradient-lines-cover-design-electro-sound-fest-template-design-for-flyer-vector.jpg",
-      "https://www.bbc.co.uk/music/articles/staticarchive/2cbab2c64e59181661440ed2878456c67f4e607c.jpg",
-      "https://www.newsday.com/_next/image?url=https%3A%2F%2Fcdn.newsday.com%2Fimage-service%2Fversion%2Fc%3AMGNhMmIzYWQtYmU3NS00%3AMmExMzc3%2Fmusic-taylor-swift-cropped.jpg%3Ff%3DLandscape%2B16%253A9%26w%3D770%26q%3D1&w=1920&q=80",
-      "https://i.ytimg.com/vi/e08blhEc7vo/maxresdefault.jpg",
-  ]
+    "https://static.vecteezy.com/system/resources/previews/006/363/338/original/electronic-music-festival-poster-with-abstract-gradient-lines-cover-design-electro-sound-fest-template-design-for-flyer-vector.jpg",
+    "https://www.bbc.co.uk/music/articles/staticarchive/2cbab2c64e59181661440ed2878456c67f4e607c.jpg",
+    "https://www.newsday.com/_next/image?url=https%3A%2F%2Fcdn.newsday.com%2Fimage-service%2Fversion%2Fc%3AMGNhMmIzYWQtYmU3NS00%3AMmExMzc3%2Fmusic-taylor-swift-cropped.jpg%3Ff%3DLandscape%2B16%253A9%26w%3D770%26q%3D1&w=1920&q=80",
+    "https://i.ytimg.com/vi/e08blhEc7vo/maxresdefault.jpg",
+  ];
 
   return (
     // <div className={styles.mainDiv}>
@@ -143,7 +143,7 @@ const MainPage_Cover = () => {
             style={{ transform: `rotate(${arrowDeg}deg)` }}
             onClick={() => openClickFunction()}
           />
-          <h1 className="text-xl" >Home</h1>
+          <h1 className="text-xl">Home</h1>
         </div>
         <div className={styles.cover_header_options}>
           <FontAwesomeIcon icon={faBell} />
@@ -165,7 +165,7 @@ const MainPage_Cover = () => {
           style={
             isOpen
               ? {
-                  width: "65%",
+                  width: "60%",
                   transition:
                     "width 1s cubic-bezier(0.65, -0.14, 0.24, 1.06) 0s",
                 }
@@ -175,12 +175,18 @@ const MainPage_Cover = () => {
                     "width 1s cubic-bezier(0.65, -0.14, 0.24, 1.06) 0s",
                 }
           }
-          className="duration-1000 ease-in-out h-full"
+          className="duration-1000 ease-in-out h-full bg-white z-10 rounded-[40px] "
         >
           <div className=" h-[30%] flex w-full justify-center items-center ">
-              <Slider>
-                  {sliderSlides.map((e)=><img className="h-full" src={e} />)}
-              </Slider>
+            <Slider>
+              {sliderSlides.map((e) => (
+                <>
+                  {/* <div className="h-full w-full object-cover" style={{backgroundImage: `url(${e})`}} > */}
+                  <img className="h-full" src={e} />
+                  {/* </div> */}
+                </>
+              ))}
+            </Slider>
           </div>
           {/* {console.log(boxWidth)} */}
           {/* <Stage
@@ -195,9 +201,12 @@ const MainPage_Cover = () => {
             /> */}
 
           <div className=" w-full px-10 flex items-center justify-center gap-4 h-[70%] ease-in-out duration-1000 ">
-            <div style={{ minWidth: "100%" }} className="h-full ease-in-out duration-1000 ">
+            <div
+              style={{ minWidth: "100%" }}
+              className="h-full ease-in-out duration-1000 "
+            >
               <div className=" w-full flex justify-between items-end h-[10%] border-b border-gray-300 ">
-                <h3 className="text-base" >Trending right now</h3>
+                <h3 className="text-base">Trending right now</h3>
                 <p className=" cursor-pointer ">see all</p>
               </div>
               {/* <div className={styles.cover_bottomPlaylist_body}> */}
@@ -207,17 +216,75 @@ const MainPage_Cover = () => {
           </div>
         </div>
         <div
-          style={
-            isOpen
-              ? {
-                  opacity: 1,
-                  width: "35%",
-                  transition: "all 800ms ease-in-out",
+          // style={
+          //   isOpen
+          //     ? {
+          //         opacity: 1,
+          //         width: "40%",
+          //         transition: "all 800ms ease-in-out",
+          //       }
+          //     : { opacity: 0, width: 0, transition: "all 1000ms ease-in-out " }
+          // }
+          className=" w-[40%] absolute right-0 h-[90%] z-0 rounded-br-3xl flex justify-center items-center flex-col "
+        >
+          <div className="w-[95%] h-[40%] ">
+            <div className=" w-full flex justify-between items-end h-[10%] mb-5 ">
+              <h3 className="text-lg">Top Artists</h3>
+              <p className=" cursor-pointer ">see all</p>
+            </div>
+            <div className="flex flex-col gap-2">
+              {contextData.playList.map((item, index) => {
+                if (index < 4) {
+                  return (
+                    <div className="flex w-full">
+                      <div className="flex w-[90%] ">
+                        <img
+                          className="w-[50px] h-[50px] mr-5 rounded-[10px] "
+                          src={item.img.src}
+                        />
+                        <div>
+                          <h4> {item.title} </h4>
+                          <p className="text-[10px] mt-1 opacity-50 ">
+                            {" "}
+                            {item.artist}{" "}
+                          </p>
+                        </div>
+                      </div>
+                      <div className=" w-[10%] cursor-pointer ">...</div>
+                    </div>
+                  );
                 }
-              : { opacity: 0, width: 0, transition: "all 1000ms ease-in-out " }
-          }
-          className="bg-green-300 w-0 h-full rounded-br-3xl flex justify-center items-center"
-        ></div>
+              })}
+            </div>
+          </div>
+          <div className=" w-[95%] h-[60%] flex flex-col gap-5 ">
+            <div className=" w-full flex justify-between items-end h-[10%] ">
+              <h3 className="text-lg">Recent favourites</h3>
+              <p className=" cursor-pointer ">see all</p>
+            </div>
+            <div className="flex gap-2 flex-wrap justify-center items-center h-[90%] overflow-y-auto ">
+              {contextData.playList.map((item, index) => {
+                if (index < 6) {
+                  return (
+                    <div className="flex flex-col  w-[150px] ">
+                      <img
+                        className="w-[150px] h-[150px] mr-5 rounded-[20px] "
+                        src={item.img.src}
+                      />
+                      <div>
+                        <h4> {item.title} </h4>
+                        <p className="text-[10px] mt-1 opacity-50 ">
+                          {" "}
+                          {item.artist}{" "}
+                        </p>
+                      </div>
+                    </div>
+                  );
+                }
+              })}
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     // </div>
