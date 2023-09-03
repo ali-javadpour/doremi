@@ -44,7 +44,8 @@ const Provider = ({ children }, props) => {
 			url: "https://media-vip.my-pishvaz.com/musicfa/tagdl/downloads/Homayoun%20Shajaryan%20-%20Ahay%20Khabardar%20(320).mp3?st=K3nR8_23knD0-0kncyUY5Q&e=1679516219",
 			title: "ahay khabar dar",
 			artist: "Homayoon shajarian",
-			genre: "pop"
+			genre: "pop",
+			isLiked: true
 		},
 		{
 			id: "0002",
@@ -52,15 +53,89 @@ const Provider = ({ children }, props) => {
 			url: "https://media-vip.my-pishvaz.com/musicfa/tagdl/ati/Homayoun%20Shajaryan%20-%20Diare%20Asheghihayam%20(320).mp3?st=yZlF1qZQASEImMZZbEQIFw&e=1679516219",
 			title: "دیار عاشقی هایم",
 			artist: "Homayoon shajarian",
-			genre: "jazz"
+			genre: "jazz",
+			isLiked: false
 		},
 		{
 			id: "0003",
 			img: image1,
 			url: "https://ups.music-fa.com/tagdl/8e401/Homayoun%20Shajaryan%20-%20Khoon%20Az%20Rokham%20Beshooy%20(320).mp3?_gl=1*9ecu53*_ga*MTc3MDQzNDg5Mi4xNjc5NTAzMjY5*_ga_FKQYXDVPQM*MTY3OTUxNTAxNC4yLjEuMTY3OTUxNTAxOC4wLjAuMA..&_ga=2.188433320.1243687680.1679503277-1770434892.1679503269",
+			title: "khoon az rokham",
+			artist: "Homayoon shajarian",
+			genre: "rock",
+			isLiked: false
+		},
+		{
+			id: "0004",
+			img: image1,
+			url: "https://ups.music-fa.com/tagdl/8e401/Homayoun%20Shajaryan%20-%20Khoon%20Az%20Rokham%20Beshooy%20(320).mp3?_gl=1*9ecu53*_ga*MTc3MDQzNDg5Mi4xNjc5NTAzMjY5*_ga_FKQYXDVPQM*MTY3OTUxNTAxNC4yLjEuMTY3OTUxNTAxOC4wLjAuMA..&_ga=2.188433320.1243687680.1679503277-1770434892.1679503269",
 			title: "khoon az rokham beshavi",
 			artist: "Homayoon shajarian",
-			genre: "rock"
+			genre: "rock",
+			isLiked: false
+		},
+		{
+			id: "0005",
+			img: image1,
+			url: "https://ups.music-fa.com/tagdl/8e401/Homayoun%20Shajaryan%20-%20Khoon%20Az%20Rokham%20Beshooy%20(320).mp3?_gl=1*9ecu53*_ga*MTc3MDQzNDg5Mi4xNjc5NTAzMjY5*_ga_FKQYXDVPQM*MTY3OTUxNTAxNC4yLjEuMTY3OTUxNTAxOC4wLjAuMA..&_ga=2.188433320.1243687680.1679503277-1770434892.1679503269",
+			title: "khoon az rokham beshavi",
+			artist: "Homayoon shajarian",
+			genre: "rock",
+			isLiked: false
+		},
+		{
+			id: "0006",
+			img: image1,
+			url: "https://ups.music-fa.com/tagdl/8e401/Homayoun%20Shajaryan%20-%20Khoon%20Az%20Rokham%20Beshooy%20(320).mp3?_gl=1*9ecu53*_ga*MTc3MDQzNDg5Mi4xNjc5NTAzMjY5*_ga_FKQYXDVPQM*MTY3OTUxNTAxNC4yLjEuMTY3OTUxNTAxOC4wLjAuMA..&_ga=2.188433320.1243687680.1679503277-1770434892.1679503269",
+			title: "khoon az rokham beshavi",
+			artist: "Homayoon shajarian",
+			genre: "rock",
+			isLiked: false
+		},
+		{
+			id: "0007",
+			img: image1,
+			url: "https://ups.music-fa.com/tagdl/8e401/Homayoun%20Shajaryan%20-%20Khoon%20Az%20Rokham%20Beshooy%20(320).mp3?_gl=1*9ecu53*_ga*MTc3MDQzNDg5Mi4xNjc5NTAzMjY5*_ga_FKQYXDVPQM*MTY3OTUxNTAxNC4yLjEuMTY3OTUxNTAxOC4wLjAuMA..&_ga=2.188433320.1243687680.1679503277-1770434892.1679503269",
+			title: "khoon az rokham beshavi",
+			artist: "Homayoon shajarian",
+			genre: "rock",
+			isLiked: false
+		},
+		{
+			id: "0008",
+			img: image1,
+			url: "https://ups.music-fa.com/tagdl/8e401/Homayoun%20Shajaryan%20-%20Khoon%20Az%20Rokham%20Beshooy%20(320).mp3?_gl=1*9ecu53*_ga*MTc3MDQzNDg5Mi4xNjc5NTAzMjY5*_ga_FKQYXDVPQM*MTY3OTUxNTAxNC4yLjEuMTY3OTUxNTAxOC4wLjAuMA..&_ga=2.188433320.1243687680.1679503277-1770434892.1679503269",
+			title: "khoon az rokham beshavi",
+			artist: "Homayoon shajarian",
+			genre: "rock",
+			isLiked: false
+		},
+		{
+			id: "0009",
+			img: image1,
+			url: "https://ups.music-fa.com/tagdl/8e401/Homayoun%20Shajaryan%20-%20Khoon%20Az%20Rokham%20Beshooy%20(320).mp3?_gl=1*9ecu53*_ga*MTc3MDQzNDg5Mi4xNjc5NTAzMjY5*_ga_FKQYXDVPQM*MTY3OTUxNTAxNC4yLjEuMTY3OTUxNTAxOC4wLjAuMA..&_ga=2.188433320.1243687680.1679503277-1770434892.1679503269",
+			title: "khoon az rokham beshavi",
+			artist: "Homayoon shajarian",
+			genre: "rock",
+			isLiked: false
+		},
+		{
+			id: "0010",
+			img: image1,
+			url: "https://ups.music-fa.com/tagdl/8e401/Homayoun%20Shajaryan%20-%20Khoon%20Az%20Rokham%20Beshooy%20(320).mp3?_gl=1*9ecu53*_ga*MTc3MDQzNDg5Mi4xNjc5NTAzMjY5*_ga_FKQYXDVPQM*MTY3OTUxNTAxNC4yLjEuMTY3OTUxNTAxOC4wLjAuMA..&_ga=2.188433320.1243687680.1679503277-1770434892.1679503269",
+			title: "khoon az rokham beshavi",
+			artist: "Homayoon shajarian",
+			genre: "rock",
+			isLiked: false
+		},
+		{
+			id: "0011",
+			img: image1,
+			url: "https://ups.music-fa.com/tagdl/8e401/Homayoun%20Shajaryan%20-%20Khoon%20Az%20Rokham%20Beshooy%20(320).mp3?_gl=1*9ecu53*_ga*MTc3MDQzNDg5Mi4xNjc5NTAzMjY5*_ga_FKQYXDVPQM*MTY3OTUxNTAxNC4yLjEuMTY3OTUxNTAxOC4wLjAuMA..&_ga=2.188433320.1243687680.1679503277-1770434892.1679503269",
+			title: "khoon az rokham beshavi",
+			artist: "Homayoon shajarian",
+			genre: "rock",
+			isLiked: false
 		},
 	])
 	const [music, setMusic] = useState(null)
