@@ -175,7 +175,7 @@ const MainPage_Cover = () => {
                     "width 1s cubic-bezier(0.65, -0.14, 0.24, 1.06) 0s",
                 }
           }
-          className="duration-1000 ease-in-out h-full bg-white z-10 rounded-[40px] "
+          className="duration-1000 ease-in-out h-full bg-white z-10 rounded-[40px] rounded-tr-none "
         >
           <div className=" h-[30%] flex w-full justify-center items-center ">
             <Slider>
